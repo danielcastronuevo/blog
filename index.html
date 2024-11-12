@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viper's Commit</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+
+    <!-- CSS de Highlight.js para el tema de colores -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+    <!-- Biblioteca JavaScript de Highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Font Awesome para íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>  <!-- Agregamos el script externo -->
+</head>
+
+<body>
+    <!-- Sección de bienvenida -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Viper's Commit</h1>
+            <p>Blog personal sobre Ciberseguridad y desarrollo.</p>
+        </div>
+    </section>
+
+    <!-- Barra de navegación -->
+     <div class="nav-container" id="header">
+    
+            <nav class="main-nav">
+                <div class="nav-left">
+                    <p class="nav-logo">VIPER</p>
+                </div>
+                
+                <div class="nav-middle">
+                    <div class="nav-link-1"><a href="#">INICIO</a></div>
+                    <div class="nav-link-2"><a href="https://drive.google.com/file/d/18x2Q1GdgLzB8zFVonBmAz4vrKa6JLcE6/view" target="_blank">CURRÍCULUM</a></div>
+                    <div class="nav-link-3"><a href="https://danielcastronuevo.github.io/Portfolio/" target="_blank">PORTFOLIO</a></div>
+                </div>
+
+                <div class="nav-right">
+                    <a href="#blog-start"><i class="fas fa-search search-icon"></i></a>
+                    <input autocomplete="off" type="text" id="search-input" class="search-input" placeholder="Buscar contenido..."> <!-- Campo de búsqueda oculto -->
+                    <div class="autocomplete-container">
+
+                    </div>
+                    
+                    <div class="bar-responsive-container">
+                        <i class="fas fa-bars bar-responsive"></i>
+                    </div>
+
+            </nav>
+            <div class="nav-responsive">
+                <div class="nav-link-1"><strong>I</strong><a href="#">INICIO</a></div>
+                <div class="nav-link-2"><a href="https://drive.google.com/file/d/18x2Q1GdgLzB8zFVonBmAz4vrKa6JLcE6/view" target="_blank">CURRÍCULUM</a></div>
+                <div class="nav-link-3"><a href="https://danielcastronuevo.github.io/Portfolio/" target="_blank">PORTFOLIO</a></div>
+            </div>
+     </div>
+     <h2 class="category-title">CATEGORIAS</h2>
+
+     <div class="category-container">
+        <a href="#blog-start" class="category-card">
+            <h2>TODAS LAS</h2>
+            <p>PUBLICACIONES</p>
+        </a>
+        <a href="https://danielcastronuevo.github.io/Portfolio/" class="category-card" target="_blank">
+            <h2>IR AL</h2>
+            <p>PORTFOLIO</p>
+        </a>
+        <a href="#blog-start" class="category-card">
+            <h2>METAS Y</h2>
+            <p>LOGROS</p>
+        </a>
+        <a href="#blog-start" class="category-card">
+            <h2>PROYECTOS</h2>
+            <p>DE CIBERSEGURIDAD</p>
+        </a>
+     </div>
+
+     <div id="blog-start">hola</div>
+
+     <div class="category-separator-container">
+        <div class="category-separator"></div>
+     </div>
+
+     <h2 class="posts-title">PUBLICACIONES</h2>
+     <p class="posts-description">* PODÉS FILTRAR POR CONTENIDO EN EL <strong><i> BUSCADOR</i></strong></p>
+
+     <div class="search-info" id="search-info">Buscando por: "certificados"</div>
+
+    <div class="container">
+        <!-- Barra lateral izquierda -->
+        <aside class="sidebar">
+            <div class="sidebar-about-me">
+                <img src="img/yo.png" alt="Daniel Alejandro Castronuevo" class="about-me-photo">
+                <div class="about-me-info">
+                    <h3>Daniel Alejandro Castronuevo</h3>
+                    <p>Estudiante de seguridad informática y apasionado por la ciberseguridad 💻</p>
+                </div>
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/dacastronuevo/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/danielcastronuevo" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="mailto:castronuevodanielalejandro@gmail.com"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </div>
+        
+            <hr class="hr-sidebar">
+        
+            <div class="hr-ver-sidebar"></div>
+        
+            <div class="sidebar-category">
+                <h2>Categorías</h2>
+                <ol>
+                    <li><a href="#blog-start">Todas las publicaciones</a></li>
+                    <li><a href="https://danielcastronuevo.github.io/Portfolio/" target="_blank">Ir al Portfolio</a></li>
+                    <li><a href="#blog-start">Metas y logros</a></li>
+                    <li><a href="#blog-start">Proyectos de Ciberseguridad</a></li>
+                </ol>
+            </div>
+        </aside>
+
+        <!-- Sección de contenido principal -->
+        <main id="blog">
+
+            <div id="no-results" style="display: none;">
+            </div>
+
+           <!--  aca van los posts -->
+
+
+
+
+
+
+
+           <article class="post" data-tags="BLOG" data-date="11-11-2024">
+            <p class="post-date">Artículo publicado el: 11-11-2024</p>
+            <h2 id="el-blog-está-terminado">El blog está terminado</h2>
+        <hr>
+        
+        <p>Como primer <em>post</em> voy a publicar una lista de los <strong>elementos</strong> que puedo utilizar a la hora de redactar una publicación:</p>
+        <h3 id="títulos">Títulos:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;h2&gt;&lt;/h2&gt;</code>
+        </pre>
+        <h3 id="subtítulos">Subtítulos:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;h3&gt;&lt;/h3&gt;</code>
+        </pre>
+        <h3 id="separadores">Separadores:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;!-- Sólido --&gt;
+&lt;hr&gt;
+&lt;!-- Punteado --&gt;
+&lt;hr class=&quot;dashed&quot;&gt;</code>
+        </pre>
+        <h3 id="texto">Texto:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;p&gt;&lt;/p&gt;</code>
+        </pre>
+        <h3 id="listas">Listas:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;!-- Desordenadas --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- Ordenadas--&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</code>
+        </pre>
+        <h3 id="citas">Citas:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;blockquote&gt;&lt;/blockquote&gt;</code>
+        </pre>
+        <h3 id="código-en-linea">Código en Linea:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;code class=&quot;inline&quot;&gt;&lt;/code&gt;</code>
+        </pre>
+        <h3 id="código">Código:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;pre&gt;
+    &lt;div class=&quot;code-header&quot;&gt;
+        &lt;span class=&quot;code-language&quot;&gt;html&lt;/span&gt;
+            &lt;button class=&quot;copy-btn&quot; onclick=&quot;copyCode(this)&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon-sm&quot;&gt;
+                    &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;Copiar código
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;code class=&quot;language-html&quot;&gt;&lt;/code&gt;
+&lt;/pre&gt;</code>
+        </pre>
+        <h3 id="imágenes">Imágenes:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;img src=&quot;URL&quot; alt=&quot;&quot;&gt;</code>
+        </pre>
+        <h3 id="tablas">Tablas:</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;div class=&quot;post-table&quot;&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Fila1&lt;/th&gt;
+                &lt;th&gt;Fila1&lt;/th&gt;
+                &lt;th&gt;Fila1&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Fila2&lt;/td&gt;
+                &lt;td&gt;Fila2&lt;/td&gt;
+                &lt;td&gt;Fila2&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code>
+        </pre>
+        <h3 id="youtube">Youtube</h3>
+        
+        <pre>
+            <div class="code-header">
+                <span class="code-language">html</span>
+                <button class="copy-btn" onclick="copyCode(this)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                    </svg>Copiar código
+                </button>
+            </div>
+            <code class="language-html">&lt;div class=&quot;iframe-wrapper&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/t1DRaTk0F3Y&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code>
+        </pre>
+        
+<hr>
+
+<p>Probablemente agregue más <strong>elementos</strong> a futuro, pero de momento éstos son todos.</p>
+
+<blockquote>Cada elemento está configurado a mano para el Blog 🌟</blockquote>
+
+            <div class="tags">
+                <span class="tag BLOG"><i>BLOG</i></span>
+            </div>
+        </article>
+
+
+ 
+
+
+
+
+
+
+
+
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 Viper's Commit - Todos los derechos reservados</p>
+            </div>
+            <div class="footer-right">
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/dacastronuevo/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/danielcastronuevo" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="mailto:castronuevodanielalejandro@gmail.com"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts para la funcionalidad de copiar código -->
+    <script>
+        function copyCode(button) {
+            const codeBlock = button.closest('pre').querySelector('code');
+            const range = document.createRange();
+            range.selectNodeContents(codeBlock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            document.execCommand('copy');
+            selection.removeAllRanges();
+            button.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.0633 5.67387C18.5196 5.98499 18.6374 6.60712 18.3262 7.06343L10.8262 18.0634C10.6585 18.3095 10.3898 18.4679 10.0934 18.4957C9.79688 18.5235 9.50345 18.4178 9.29289 18.2072L4.79289 13.7072C4.40237 13.3167 4.40237 12.6835 4.79289 12.293C5.18342 11.9025 5.81658 11.9025 6.20711 12.293L9.85368 15.9396L16.6738 5.93676C16.9849 5.48045 17.607 5.36275 18.0633 5.67387Z" fill="currentColor"></path></svg>¡Copiado!`;
+            setTimeout(() => {
+                button.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path>
+                        </svg>Copiar código`;
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>
